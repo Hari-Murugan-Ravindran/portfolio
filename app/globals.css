@@ -29,6 +29,9 @@ a { color:inherit; text-decoration:none; }
 .value span { text-transform:uppercase; letter-spacing:.12em; font-size:10px; font-weight:700; }
 .value p { margin:8px 0 0; font-family:Georgia,serif; font-size:23px; line-height:1.4; }
 .artifactIntro { background:var(--ink); color:var(--paper); padding:100px 8vw 70px; }
+.artifactPageHero { padding-top:58px; }
+.backLink { display:inline-block; margin-bottom:60px; color:var(--mint); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+.artifactHeading h1 { font-family:Georgia,serif; font-size:clamp(58px,8vw,110px); line-height:.88; font-weight:400; letter-spacing:-.05em; margin:45px 0 25px; }
 .light { color:var(--mint); }
 .artifactHeading { display:grid; grid-template-columns:2fr 1fr; align-items:end; gap:10vw; }
 .artifactHeading h2 { font-family:Georgia,serif; font-size:clamp(58px,8vw,110px); line-height:.88; font-weight:400; letter-spacing:-.05em; margin:45px 0 25px; }
@@ -58,12 +61,32 @@ a { color:inherit; text-decoration:none; }
 .references li { padding:0 0 22px 12px; font-size:13px; line-height:1.6; border-bottom:1px solid rgba(255,255,255,.25); margin-bottom:22px; }
 footer { min-height:150px; background:var(--lime); padding:40px 5vw; display:flex; align-items:center; justify-content:space-between; font-size:12px; }
 footer a { font-weight:700; }
+.artifactsSection { padding:120px 8vw; background:var(--paper); }
+.artifactsHeader { display:grid; grid-template-columns:2fr 1fr; gap:9vw; align-items:end; margin-bottom:65px; }
+.artifactsHeader h2 { font-family:Georgia,serif; font-size:clamp(52px,7vw,92px); font-weight:400; letter-spacing:-.05em; line-height:1; margin:24px 0 0; }
+.artifactsHeader>p { font-size:15px; line-height:1.7; color:#53645c; border-top:1px solid var(--line); padding-top:18px; }
+.artifactCard { display:grid; grid-template-columns:1.05fr 1fr; background:var(--cream); border:1px solid var(--line); min-height:600px; overflow:hidden; }
+.artifactCardVisual { position:relative; min-height:500px; background:var(--ink); overflow:hidden; padding:34px; }
+.cardNumber { font-family:Georgia,serif; color:var(--mint); font-size:24px; }
+.cardOrb { position:absolute; width:290px; height:290px; border-radius:50%; background:var(--lime); right:-45px; top:65px; box-shadow:0 0 0 55px rgba(200,240,90,.08); }
+.cardTimeline { position:absolute; left:11%; right:9%; bottom:90px; height:1px; background:var(--mint); display:flex; justify-content:space-between; }
+.cardTimeline i { display:block; width:14px; height:14px; margin-top:-7px; border:3px solid var(--ink); outline:1px solid var(--mint); border-radius:50%; background:var(--lime); }
+.artifactCardContent { padding:60px; display:flex; align-items:flex-start; flex-direction:column; }
+.cardKicker { color:#557c69; text-transform:uppercase; letter-spacing:.12em; font-size:10px; font-weight:700; }
+.artifactCardContent h3 { font-family:Georgia,serif; font-size:clamp(45px,5vw,68px); font-weight:400; letter-spacing:-.045em; line-height:.95; margin:24px 0 18px; }
+.cardSubtitle { text-transform:uppercase; letter-spacing:.08em; font-size:10px!important; font-weight:700; color:#557c69!important; }
+.artifactCardContent>p { font-size:15px; line-height:1.7; color:#53645c; }
+.cardMeta { width:100%; border-top:1px solid var(--line); margin:22px 0 30px; padding-top:18px; display:flex; gap:35px; font-size:11px; color:#53645c; }
+.cardMeta span { display:flex; flex-direction:column; gap:5px; }.cardMeta b { color:var(--ink); text-transform:uppercase; letter-spacing:.08em; font-size:9px; }
+.cardButton { margin-top:auto; }
+.comingNext { display:flex; gap:28px; align-items:center; margin-top:30px; padding:28px 0; border-bottom:1px solid var(--line); color:#65756e; font-size:13px; }
+.comingNext span { font-family:Georgia,serif; font-size:24px; color:var(--ink); }
 @media (max-width:760px) {
   .navlinks { display:none; } .hero { padding-top:11vh; } .heroNote { position:relative; right:auto; bottom:auto; margin-top:70px; }
-  .about,.artifactHeading,.references { grid-template-columns:1fr; } .about { padding:80px 6vw; }
+  .about,.artifactHeading,.references,.artifactsHeader,.artifactCard { grid-template-columns:1fr; } .about { padding:80px 6vw; }
   .artifactIntro,.timeline,.artifactDetails,.references { padding-left:6vw; padding-right:6vw; }
   .milestone { grid-template-columns:80px 30px 1fr; } .year { font-size:24px; }
   .milestoneBody { grid-template-columns:1fr; gap:16px; } .milestoneBody>* { grid-column:1!important; }
-  .impact { grid-template-columns:1fr; } .detailGrid { grid-template-columns:1fr; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
+  .impact { grid-template-columns:1fr; } .detailGrid { grid-template-columns:1fr; } .artifactsSection { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .cardOrb { width:220px; height:220px; } .cardMeta { flex-direction:column; gap:14px; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
