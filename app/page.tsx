@@ -7,7 +7,6 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="eyebrow">Professional portfolio · AI & machine learning</div>
         <h1>I make complex AI ideas <em>clear, useful, and human.</em></h1>
         <p className="lede">A growing collection of course-based work that documents my ability to learn emerging technologies, connect ideas, and communicate their value to professional audiences.</p>
         <a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a>
