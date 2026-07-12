@@ -1,3 +1,6 @@
+import { ArtifactCard } from "./components/ArtifactCard";
+import { artifacts } from "./data/artifacts";
+
 export default function Home() {
   return (
     <main>
@@ -27,21 +30,9 @@ export default function Home() {
           <p>Each artifact is presented as a complete professional resource, with its purpose, process, tools, and audience value documented.</p>
         </div>
 
-        <article className="artifactCard">
-          <div className="artifactCardVisual" aria-hidden="true">
-            <span className="cardNumber">01</span>
-            <div className="cardOrb"></div>
-            <div className="cardTimeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </div>
-          <div className="artifactCardContent">
-            <p className="cardKicker">Artifact 01 · Research & communication</p>
-            <h3>Timeline of<br/>AI Evolution</h3>
-            <p className="cardSubtitle">From the Turing Test to AI agents and regulation</p>
-            <p>A four-page visual timeline tracing major developments in artificial intelligence from 1950 through 2024, including neural networks, expert systems, deep learning, generative AI, and modern AI agents.</p>
-            <div className="cardMeta"><span><b>Format</b> Four-page PDF timeline</span><span><b>Focus</b> AI/ML evolution</span></div>
-            <a className="button cardButton" href="/artifacts/ai-ml-timeline">View Artifact 1 <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
+        <div className="artifactsGrid">
+          {artifacts.map((artifact) => <ArtifactCard artifact={artifact} key={artifact.href} />)}
+        </div>
       </section>
 
       <footer><div className="brand"><span>HR</span> Learning Portfolio</div><a href="#top">Back to top ↑</a></footer>

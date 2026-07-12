@@ -67,6 +67,7 @@ footer a { font-weight:700; }
 .artifactsHeader h2 { font-family:Georgia,serif; font-size:clamp(52px,7vw,92px); font-weight:400; letter-spacing:-.05em; line-height:1; margin:24px 0 0; }
 .artifactsHeader>p { font-size:15px; line-height:1.7; color:#53645c; border-top:1px solid var(--line); padding-top:18px; }
 .artifactCard { display:grid; grid-template-columns:1.05fr 1fr; background:var(--cream); border:1px solid var(--line); min-height:600px; overflow:hidden; }
+.artifactsGrid { display:grid; gap:34px; }
 .artifactCardVisual { position:relative; min-height:500px; background:var(--ink); overflow:hidden; padding:34px; }
 .artifactThumbnail { display:grid; place-items:center; }
 .artifactThumbnail img { width:88%; max-height:82%; object-fit:contain; background:white; box-shadow:0 22px 70px rgba(0,0,0,.35); transform:rotate(-1.5deg); }
