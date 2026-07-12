@@ -73,12 +73,23 @@ footer a { font-weight:700; }
 .artifactThumbnail { display:grid; place-items:center; }
 .artifactThumbnail img { width:88%; max-height:82%; object-fit:contain; background:white; box-shadow:0 22px 70px rgba(0,0,0,.35); transform:rotate(-1.5deg); }
 .artifactThumbnail .cardNumber { position:absolute; top:34px; left:34px; z-index:2; background:var(--ink); padding:8px 11px; }
-.cardNumber { font-family:Georgia,serif; color:var(--mint); font-size:24px; }
+.cardNumber { position:relative; z-index:3; font-family:Georgia,serif; color:var(--mint); font-size:24px; }
 .cardOrb { position:absolute; width:290px; height:290px; border-radius:50%; background:var(--lime); right:-45px; top:65px; box-shadow:0 0 0 55px rgba(200,240,90,.08); }
 .cardTimeline { position:absolute; left:11%; right:9%; bottom:90px; height:1px; background:var(--mint); display:flex; justify-content:space-between; }
 .cardTimeline i { display:block; width:14px; height:14px; margin-top:-7px; border:3px solid var(--ink); outline:1px solid var(--mint); border-radius:50%; background:var(--lime); }
-.cardReport { position:absolute; inset:64px 10% 54px; display:grid; place-items:center; }
-.cardReport img { display:block; width:100%; height:100%; object-fit:contain; object-position:center; background:white; box-shadow:0 28px 70px rgba(0,0,0,.42); transform:rotate(-1.5deg); }
+.cardCoach { position:absolute; inset:0; overflow:hidden; background:linear-gradient(145deg,#315b49 0%,#17251f 72%); }
+.coachPitch { position:absolute; inset:52px 42px; border:1px solid rgba(169,217,196,.38); }
+.coachPitch:before { content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:rgba(169,217,196,.3); }
+.coachPitch:after { content:""; position:absolute; width:150px; height:150px; border:1px solid rgba(169,217,196,.35); border-radius:50%; left:50%; top:50%; transform:translate(-50%,-50%); }
+.coachPitch i:first-child,.coachPitch i:nth-child(2) { position:absolute; width:72px; height:145px; border:1px solid rgba(169,217,196,.3); top:50%; transform:translateY(-50%); }
+.coachPitch i:first-child { left:-1px; border-left:0; }.coachPitch i:nth-child(2) { right:-1px; border-right:0; }
+.coachPitch i:nth-child(3) { position:absolute; width:5px; height:5px; border-radius:50%; background:var(--mint); left:50%; top:50%; transform:translate(-50%,-50%); }
+.coachOrbit { position:absolute; width:280px; height:280px; border:1px solid rgba(200,240,90,.55); border-radius:50%; right:-25px; top:58px; box-shadow:0 0 0 42px rgba(200,240,90,.055),0 0 0 83px rgba(200,240,90,.025); }
+.coachOrbit strong { position:absolute; inset:50%; width:138px; height:138px; transform:translate(-50%,-50%); border-radius:50%; background:var(--lime); color:var(--ink); display:flex; align-items:center; justify-content:center; flex-direction:column; font-family:Georgia,serif; font-size:50px; font-weight:400; box-shadow:0 18px 55px rgba(0,0,0,.3); }
+.coachOrbit strong small { font-family:Arial,sans-serif; font-size:8px; letter-spacing:.2em; font-weight:700; margin-top:2px; }
+.coachOrbit>span { position:absolute; padding:7px 10px; border:1px solid rgba(169,217,196,.65); background:var(--ink); color:var(--mint); font-size:7px; letter-spacing:.12em; font-weight:700; z-index:2; }
+.coachOrbit>span:first-child { left:-26px; top:31px; }.coachOrbit>span:nth-child(2) { right:-12px; top:95px; }.coachOrbit>span:nth-child(3) { left:5px; bottom:19px; }
+.coachCaption { position:absolute; left:58px; bottom:54px; color:var(--paper); }.coachCaption span { display:block; color:var(--lime); letter-spacing:.17em; font-size:8px; font-weight:700; margin-bottom:10px; }.coachCaption b { display:block; font-family:Georgia,serif; font-size:48px; line-height:.85; font-weight:400; letter-spacing:-.04em; }
 .artifactCardContent { padding:60px; display:flex; align-items:flex-start; flex-direction:column; }
 .cardKicker { color:#557c69; text-transform:uppercase; letter-spacing:.12em; font-size:10px; font-weight:700; }
 .artifactCardContent h3 { font-family:Georgia,serif; font-size:clamp(45px,5vw,68px); font-weight:400; letter-spacing:-.045em; line-height:.95; margin:24px 0 18px; }
@@ -121,6 +132,6 @@ footer a { font-weight:700; }
   .artifactIntro,.timeline,.artifactDetails,.references { padding-left:6vw; padding-right:6vw; }
   .milestone { grid-template-columns:80px 30px 1fr; } .year { font-size:24px; }
   .milestoneBody { grid-template-columns:1fr; gap:16px; } .milestoneBody>* { grid-column:1!important; }
-  .impact { grid-template-columns:1fr; } .detailGrid,.toolGrid { grid-template-columns:1fr; } .artifactsSection,.submittedArtifact,.projectOverview,.thinkingSection,.coachFeatures { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .cardOrb { width:220px; height:220px; } .cardReport { inset:48px 9% 38px; } .cardMeta { flex-direction:column; gap:14px; } .pdfPages figure { padding:8px; } .thinkingStep { grid-template-columns:55px 1fr; }.thinkingStep>div:last-child { grid-template-columns:1fr; gap:12px; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
+  .impact { grid-template-columns:1fr; } .detailGrid,.toolGrid { grid-template-columns:1fr; } .artifactsSection,.submittedArtifact,.projectOverview,.thinkingSection,.coachFeatures { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .cardOrb { width:220px; height:220px; } .coachPitch { inset:42px 28px; }.coachOrbit { width:220px; height:220px; right:-25px; top:45px; }.coachOrbit strong { width:108px; height:108px; font-size:38px; }.coachCaption { left:36px; bottom:38px; }.coachCaption b { font-size:38px; } .cardMeta { flex-direction:column; gap:14px; } .pdfPages figure { padding:8px; } .thinkingStep { grid-template-columns:55px 1fr; }.thinkingStep>div:last-child { grid-template-columns:1fr; gap:12px; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
