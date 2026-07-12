@@ -42,8 +42,8 @@ export default function TimelineArtifact() {
       </section>
 
       <section className="artifactDetails" id="details">
-        <p className="sectionLabel">Behind the artifact</p><h2>Purpose, process,<br/>and professional value.</h2>
-        <p className="intro"><b>Introduction & description.</b> This interactive-style visual timeline presents eight turning points that shaped modern AI and machine learning. It pairs each advance with a short explanation of its broader importance so readers can see continuity—not just a list of inventions.</p>
+        <p className="sectionLabel">Required artifact information</p><h2>Purpose, process,<br/>and professional value.</h2>
+        <p className="intro"><b>Title:</b> From Imitation to Generation<br/><br/><b>Introduction & description:</b> This interactive-style visual timeline presents eight turning points that shaped modern AI and machine learning. It pairs each advance with a short explanation of its broader importance so readers can see continuity—not just a list of inventions.</p>
         <div className="detailGrid">{details.map(([label, text], i) => <div className="detail" key={label}><span>{String(i + 1).padStart(2, "0")}</span><h3>{label}</h3><p>{text}</p></div>)}</div>
       </section>
 
