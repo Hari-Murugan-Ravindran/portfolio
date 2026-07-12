@@ -10,7 +10,6 @@ export default function Home() {
         <h1>I make complex AI ideas <em>clear, useful, and human.</em></h1>
         <p className="lede">A growing collection of course-based work that documents my ability to learn emerging technologies, connect ideas, and communicate their value to professional audiences.</p>
         <a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a>
-        <div className="heroNote"><span>01</span><p><b>Current focus</b><br/>Building a rigorous foundation in artificial intelligence and machine learning.</p></div>
       </section>
 
       <section className="about" id="about">
