@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label="Portfolio home"><span>AI</span> Learning Portfolio</a>
+        <a className="brand" href="#top" aria-label="Portfolio home"><span>HR</span> Learning Portfolio</a>
         <div className="navlinks"><a href="#about">About</a><a href="#artifacts">Artifacts</a></div>
       </nav>
 
@@ -46,7 +46,7 @@ export default function Home() {
         </article>
       </section>
 
-      <footer><div className="brand"><span>AI</span> Learning Portfolio</div><p>Course-based work · Curiosity · Clarity · Responsible innovation</p><a href="#top">Back to top ↑</a></footer>
+      <footer><div className="brand"><span>HR</span> Learning Portfolio</div><p>Course-based work · Curiosity · Clarity · Responsible innovation</p><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
