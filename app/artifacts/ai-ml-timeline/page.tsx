@@ -34,7 +34,7 @@ const milestones = [
 const details = [
   ["Objective", "Create a chronological visual resource that explains how artificial intelligence developed from foundational ideas into modern generative AI, agents, and regulation."],
   ["Process", "I researched important AI milestones, selected technical and social turning points, organized them chronologically, and combined concise explanations with visual references across four connected pages."],
-  ["Tools & technologies", "PDF creation tools."],
+  ["Tools & technologies", "Web-based research, document design tools, image resources, and PDF creation tools."],
   ["Value Proposition", "This timeline gives students, colleagues, and nontechnical professionals an accessible way to understand how today’s AI systems emerged from decades of research, setbacks, and breakthroughs."],
   ["Unique value", "The artifact connects technical advances, commercial adoption, AI winters, consumer products, generative AI, agents, and regulation in one continuous narrative."],
   ["Relevance", "Historical context helps AI professionals recognize recurring patterns, communicate emerging technology responsibly, and distinguish long-term progress from short-term hype."],
