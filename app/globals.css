@@ -86,8 +86,6 @@ footer a { font-weight:700; }
 .cardMeta { width:100%; border-top:1px solid var(--line); margin:22px 0 30px; padding-top:18px; display:flex; gap:35px; font-size:11px; color:#53645c; }
 .cardMeta span { display:flex; flex-direction:column; gap:5px; }.cardMeta b { color:var(--ink); text-transform:uppercase; letter-spacing:.08em; font-size:9px; }
 .cardButton { margin-top:auto; }
-.comingNext { display:flex; gap:28px; align-items:center; margin-top:30px; padding:28px 0; border-bottom:1px solid var(--line); color:#65756e; font-size:13px; }
-.comingNext span { font-family:Georgia,serif; font-size:24px; color:var(--ink); }
 .submittedArtifact { padding:110px 8vw; background:var(--cream); }
 .submissionHeader { display:grid; grid-template-columns:1.4fr 1fr; gap:10vw; align-items:end; margin-bottom:65px; }
 .submissionHeader h2 { font-family:Georgia,serif; font-weight:400; letter-spacing:-.04em; font-size:clamp(46px,5.5vw,76px); line-height:1; margin:28px 0 0; }

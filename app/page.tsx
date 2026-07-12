@@ -30,9 +30,10 @@ export default function Home() {
         </div>
 
         <article className="artifactCard">
-          <div className="artifactCardVisual artifactThumbnail">
+          <div className="artifactCardVisual" aria-hidden="true">
             <span className="cardNumber">01</span>
-            <img src="/artifacts/timeline-page-1.png" alt="Preview of the submitted Timeline of AI Evolution" />
+            <div className="cardOrb"></div>
+            <div className="cardTimeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
           </div>
           <div className="artifactCardContent">
             <p className="cardKicker">Artifact 01 · Research & communication</p>
@@ -43,8 +44,6 @@ export default function Home() {
             <a className="button cardButton" href="/artifacts/ai-ml-timeline">View Artifact 1 <span aria-hidden="true">→</span></a>
           </div>
         </article>
-
-        <div className="comingNext"><span>02—05</span><p>More course-based artifacts will be added as the portfolio grows.</p></div>
       </section>
 
       <footer><div className="brand"><span>AI</span> Learning Portfolio</div><p>Course-based work · Curiosity · Clarity · Responsible innovation</p><a href="#top">Back to top ↑</a></footer>
