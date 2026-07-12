@@ -12,7 +12,7 @@ export default function Home() {
       <section className="hero" id="top">
         <h1>Exploring how AI <em>evolves, teaches, and creates value.</em></h1>
         <div className="heroLower">
-          <div><p className="lede">I’m Hari Murugan Ravindran. With a background in software development and DevOps, I’m expanding my knowledge of AI and machine learning through practical, audience-focused projects.</p><a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a></div>
+          <div><p className="lede">I’m Hari Murugan Ravindran. With a background in software development and DevOps, I’m expanding my knowledge of AI and machine learning through practical, hands-on projects.</p><a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a></div>
         </div>
       </section>
 
