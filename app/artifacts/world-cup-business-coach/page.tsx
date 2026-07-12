@@ -16,7 +16,7 @@ const details = [
   ["Objective", "Explore generative AI tools and apply design thinking to create an AI-based solution for a defined learning need."],
   ["Process", "I compared AI responses, explored tutoring and research assistants, identified a learner problem, and iteratively designed and tested a specialized Custom GPT."],
   ["Tools & technologies", "ChatGPT, Tutor Me (Khanmigo Lite), STORM AI, prompt engineering, design thinking, and Custom GPT creation."],
-  ["Audience value", "The project turns complex World Cup business concepts into approachable explanations for learners ages 10–15."],
+  ["Value Proposition", "The project turns complex World Cup business concepts into approachable explanations for learners ages 10–15."],
   ["Unique value", "It combines a familiar global sporting event with adaptive AI instruction, making business learning more engaging and relevant."],
   ["Relevance", "The artifact demonstrates AI tool evaluation, audience awareness, prompt design, prototyping, and responsible educational communication."],
 ];
