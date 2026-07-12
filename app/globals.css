@@ -17,10 +17,7 @@ a { color:inherit; text-decoration:none; }
 .hero h1 { max-width:950px; margin:24px 0; font-family:Georgia,serif; font-size:clamp(56px,8vw,116px); line-height:.91; font-weight:400; letter-spacing:-.055em; position:relative; z-index:1; }
 .hero h1 em { display:block; color:#557c69; }
 .lede { max-width:590px; font-size:19px; line-height:1.6; margin:34px 0; }
-.heroLower { position:relative; z-index:1; display:grid; grid-template-columns:1.3fr 1fr; gap:10vw; align-items:end; }
-.heroProjects { border-top:1px solid var(--line); }
-.heroProjects>div { display:grid; grid-template-columns:42px 1fr; gap:18px; padding:17px 0; border-bottom:1px solid var(--line); align-items:start; }
-.heroProjects span { font-family:Georgia,serif; color:#557c69; }.heroProjects p { margin:0; color:#53645c; font-size:11px; line-height:1.5; }.heroProjects b { display:block; color:var(--ink); font-family:Georgia,serif; font-size:17px; font-weight:400; margin-bottom:3px; }
+.heroLower { position:relative; z-index:1; max-width:650px; }
 .button { display:inline-flex; gap:28px; align-items:center; background:var(--ink); color:white; padding:17px 22px; font-size:13px; font-weight:700; }
 .button:hover { background:#557c69; }
 .about { display:grid; grid-template-columns:1fr 1fr; gap:10vw; padding:120px 8vw; background:var(--cream); }
@@ -132,7 +129,7 @@ footer a { font-weight:700; }
 .coachFeatures { padding:115px 8vw; display:grid; grid-template-columns:1fr 1fr; gap:10vw; }
 .featureList { border-top:1px solid var(--line); }.featureList>div { display:grid; grid-template-columns:45px 1fr; gap:20px; padding:20px 0; border-bottom:1px solid var(--line); align-items:center; }.featureList span { color:#557c69; font-family:Georgia,serif; }.featureList p { margin:0; font-size:15px; }
 @media (max-width:760px) {
-  .navlinks { display:none; } .hero { padding-top:9vh; }.heroLower { grid-template-columns:1fr; gap:55px; }.hero:after { width:75vw; height:75vw; right:-35vw; top:10vh; }
+  .navlinks { display:none; } .hero { padding-top:9vh; }.hero:after { width:75vw; height:75vw; right:-35vw; top:10vh; }
   .about,.artifactHeading,.references,.artifactsHeader,.artifactCard,.submissionHeader,.overviewHeading,.coachFeatures { grid-template-columns:1fr; } .about { padding:80px 6vw; } .pdfCallout,.projectActions { align-items:flex-start; flex-direction:column; }
   .artifactIntro,.timeline,.artifactDetails,.references { padding-left:6vw; padding-right:6vw; }
   .milestone { grid-template-columns:80px 30px 1fr; } .year { font-size:24px; }
