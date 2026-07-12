@@ -35,7 +35,7 @@ const details = [
   ["Objective", "Create a chronological visual resource that explains how artificial intelligence developed from foundational ideas into modern generative AI, agents, and regulation."],
   ["Process", "I researched important AI milestones, selected technical and social turning points, organized them chronologically, and combined concise explanations with visual references across four connected pages."],
   ["Tools & technologies", "Web-based research, document design tools, image resources, and PDF creation and merging tools."],
-  ["Artifact-specific value proposition", "This timeline gives students, colleagues, and nontechnical professionals an accessible way to understand how today’s AI systems emerged from decades of research, setbacks, and breakthroughs."],
+  ["Audience value", "This timeline gives students, colleagues, and nontechnical professionals an accessible way to understand how today’s AI systems emerged from decades of research, setbacks, and breakthroughs."],
   ["Unique value", "The artifact connects technical advances, commercial adoption, AI winters, consumer products, generative AI, agents, and regulation in one continuous narrative."],
   ["Relevance", "Historical context helps AI professionals recognize recurring patterns, communicate emerging technology responsibly, and distinguish long-term progress from short-term hype."],
 ];
@@ -46,8 +46,8 @@ export default function TimelineArtifact() {
       <nav className="nav artifactNav" aria-label="Artifact navigation"><a className="brand" href="/" aria-label="Portfolio home"><span>HR</span> Hari Murugan Ravindran</a><div className="navlinks"><a href="/">← All artifacts</a><a href="#timeline">Timeline</a><a href="#details">Artifact details</a></div></nav>
       <section className="artifactIntro artifactPageHero" id="top">
         <a className="backLink" href="/">← Back to portfolio</a><p className="sectionLabel light">Artifact 01 · Research & visual communication</p>
-        <div className="artifactHeading"><div><h1>Timeline of<br/>AI evolution.</h1><p className="subtitle">A web presentation based on the original four-page course submission</p></div><p className="audience"><b>Designed for</b><br/>Students, colleagues, hiring managers, and nontechnical professionals who want a concise orientation to the development of AI.</p></div>
-        <div className="pdfCallout"><div><span>Original course submission</span><p>View the complete four-page document exactly as submitted.</p></div><a className="button pdfButton" href="/artifacts/timeline-of-ai-evolution.pdf" target="_blank" rel="noreferrer">Open submitted PDF <span aria-hidden="true">↗</span></a></div>
+        <div className="artifactHeading"><div><h1>Timeline of<br/>AI evolution.</h1><p className="subtitle">A visual journey through more than seven decades of artificial intelligence</p></div><p className="audience"><b>Designed for</b><br/>Students, colleagues, hiring managers, and nontechnical professionals who want a concise orientation to the development of AI.</p></div>
+        <div className="pdfCallout"><div><span>Timeline PDF</span><p>Explore the complete four-page visual timeline.</p></div><a className="button pdfButton" href="/artifacts/timeline-of-ai-evolution.pdf" target="_blank" rel="noreferrer">Open PDF <span aria-hidden="true">↗</span></a></div>
       </section>
 
       <section className="timeline" id="timeline" aria-label="Timeline of AI evolution">
@@ -55,7 +55,7 @@ export default function TimelineArtifact() {
       </section>
 
       <section className="artifactDetails" id="details">
-        <p className="sectionLabel">Required artifact information</p><h2>Purpose, process,<br/>and professional value.</h2>
+        <p className="sectionLabel">Project overview</p><h2>Purpose, process,<br/>and professional value.</h2>
         <p className="intro"><b>Title:</b> Timeline of AI Evolution<br/><br/><b>Introduction & description:</b> This timeline traces more than seven decades of artificial intelligence, beginning with Alan Turing’s 1950 proposal and progressing through neural networks, expert systems, AI winters, deep learning, large language models, multimodal systems, agents, and AI regulation through 2024.</p>
         <div className="detailGrid">{details.map(([label, text], i) => <div className="detail" key={label}><span>{String(i + 1).padStart(2, "0")}</span><h3>{label}</h3><p>{text}</p></div>)}</div>
       </section>

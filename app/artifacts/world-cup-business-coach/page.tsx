@@ -16,7 +16,7 @@ const details = [
   ["Objective", "Explore generative AI tools and apply design thinking to create an AI-based solution for a defined learning need."],
   ["Process", "I compared AI responses, explored tutoring and research assistants, identified a learner problem, and iteratively designed and tested a specialized Custom GPT."],
   ["Tools & technologies", "ChatGPT, Tutor Me (Khanmigo Lite), STORM AI, prompt engineering, design thinking, and Custom GPT creation."],
-  ["Artifact-specific value proposition", "The project turns complex World Cup business concepts into approachable explanations for learners ages 10–15."],
+  ["Audience value", "The project turns complex World Cup business concepts into approachable explanations for learners ages 10–15."],
   ["Unique value", "It combines a familiar global sporting event with adaptive AI instruction, making business learning more engaging and relevant."],
   ["Relevance", "The artifact demonstrates AI tool evaluation, audience awareness, prompt design, prototyping, and responsible educational communication."],
 ];
@@ -29,7 +29,7 @@ export default function WorldCupBusinessCoachArtifact() {
         <a className="backLink" href="/">← Back to portfolio</a><p className="sectionLabel light">Artifact 02 · AI prototyping & design thinking</p>
         <div className="artifactHeading"><div><h1>World Cup<br/>Business Coach.</h1><p className="subtitle">An AI learning assistant that makes business concepts easier to understand</p></div><p className="audience"><b>Designed for</b><br/>Young learners ages 10–15 who are interested in the World Cup and want an accessible introduction to sponsorships, media rights, ticketing, tourism, and merchandise.</p></div>
         <div className="projectActions">
-          <a className="button pdfButton" href="/artifacts/world-cup-business-coach-report.pdf" target="_blank" rel="noreferrer">View submitted report <span aria-hidden="true">↗</span></a>
+          <a className="button pdfButton" href="/artifacts/world-cup-business-coach-report.pdf" target="_blank" rel="noreferrer">View project report <span aria-hidden="true">↗</span></a>
           <a className="textAction" href="/artifacts/world-cup-business-coach-report.docx" download>Download Word document ↓</a>
           <a className="textAction" href="https://chatgpt.com/g/g-6a539f1e2a848191bb5bd6b4bfcc7fca-world-cup-business-coach" target="_blank" rel="noreferrer">Open AI assistant ↗</a>
         </div>
@@ -51,7 +51,7 @@ export default function WorldCupBusinessCoachArtifact() {
       </section>
 
       <section className="artifactDetails" id="details">
-        <p className="sectionLabel">Required artifact information</p><h2>Purpose, process,<br/>and professional value.</h2>
+        <p className="sectionLabel">Project overview</p><h2>Purpose, process,<br/>and professional value.</h2>
         <p className="intro"><b>Title:</b> AI Lab Report — World Cup Business Coach<br/><br/><b>Introduction & description:</b> This report documents my exploration of generative AI tools and the creation of a Custom GPT that teaches World Cup business concepts through simple language and familiar examples. The project demonstrates how audience research, prompt experimentation, and design thinking can turn a broad technology into a purposeful learning experience.</p>
         <div className="detailGrid">{details.map(([label, text], index) => <div className="detail" key={label}><span>{String(index + 1).padStart(2, "0")}</span><h3>{label}</h3><p>{text}</p></div>)}</div>
       </section>

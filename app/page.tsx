@@ -11,7 +11,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <h1>I make complex AI ideas <em>clear, useful, and human.</em></h1>
-        <p className="lede">A growing collection of course-based work that documents my ability to learn emerging technologies, connect ideas, and communicate their value to professional audiences.</p>
+        <p className="lede">A growing collection of projects that demonstrates my ability to learn emerging technologies, connect ideas, and communicate their value to professional audiences.</p>
         <a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a>
       </section>
 
@@ -19,7 +19,7 @@ export default function Home() {
         <div><p className="sectionLabel">Professional bio</p><h2>Learning in public,<br/>leading with clarity.</h2></div>
         <div className="aboutCopy">
           <p>I am an AI and machine learning learner developing the technical judgment and communication skills needed to turn emerging technologies into practical value. My work is grounded in curiosity, careful research, and a commitment to responsible application.</p>
-          <p>This portfolio follows that development through complete, audience-ready artifacts—not just descriptions of coursework. Each entry explains the goal, process, tools, and value behind the work.</p>
+          <p>This portfolio presents complete, audience-ready projects. Each entry explains the goal, process, tools, and value behind the work.</p>
           <div className="value"><span>Personal value proposition</span><p>I translate complex AI/ML concepts into clear, actionable resources that help people learn, make informed decisions, and approach change with confidence.</p></div>
         </div>
       </section>
