@@ -17,19 +17,17 @@ export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
       <div className="artifactCardVisual" aria-hidden="true">
         <span className="cardNumber">{artifact.number}</span>
         {artifact.visual === "timeline" && (
-          <>
-            <div className="cardOrb"></div>
-            <div className="cardTimeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </>
+          <div className="simpleThumb timelineThumb">
+            <p>Timeline of</p><strong>AI Evolution</strong>
+            <div className="simpleRule"><i></i><i></i><i></i></div>
+            <span>1950 - 2024</span>
+          </div>
         )}
         {artifact.visual === "report" && (
-          <div className="cardCoach">
-            <div className="coachPitch"><i></i><i></i><i></i></div>
-            <div className="coachOrbit">
-              <span>SPONSORS</span><span>MEDIA</span><span>TICKETS</span>
-              <strong>AI<small>COACH</small></strong>
-            </div>
-            <div className="coachCaption"><span>WORLD CUP</span><b>Business<br/>Coach</b></div>
+          <div className="simpleThumb reportThumb">
+            <p>AI Lab Report</p><strong>World Cup<br/>Business Coach</strong>
+            <div className="simpleRule"><i></i><i></i><i></i></div>
+            <span>ChatGPT · STORM AI · Design Thinking</span>
           </div>
         )}
       </div>
