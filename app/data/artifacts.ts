@@ -13,4 +13,16 @@ export const artifacts: ArtifactCardData[] = [
     buttonLabel: "View Artifact 1",
     visual: "timeline",
   },
+  {
+    number: "02",
+    category: "AI prototyping & design thinking",
+    title: "World Cup Business Coach",
+    subtitle: "An AI learning assistant for young World Cup fans",
+    description: "An AI Lab project documenting the research, prompt experimentation, and design-thinking process used to create a Custom GPT that explains World Cup business concepts to learners ages 10–15.",
+    format: "13-page AI Lab report",
+    focus: "AI-assisted learning",
+    href: "/artifacts/world-cup-business-coach",
+    buttonLabel: "View Artifact 2",
+    visual: "report",
+  },
 ];

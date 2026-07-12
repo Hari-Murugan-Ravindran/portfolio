@@ -8,7 +8,7 @@ export type ArtifactCardData = {
   focus: string;
   href: string;
   buttonLabel: string;
-  visual?: "timeline";
+  visual?: "timeline" | "report";
 };
 
 export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
@@ -21,6 +21,14 @@ export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
             <div className="cardOrb"></div>
             <div className="cardTimeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
           </>
+        )}
+        {artifact.visual === "report" && (
+          <div className="cardReport">
+            <span>AI LAB REPORT</span>
+            <strong>World Cup<br/>Business Coach</strong>
+            <div><i>AI</i><i>UX</i><i>GPT</i></div>
+            <small>Design thinking · 13 pages</small>
+          </div>
         )}
       </div>
       <div className="artifactCardContent">
