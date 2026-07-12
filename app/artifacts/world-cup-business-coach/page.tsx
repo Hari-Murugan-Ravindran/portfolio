@@ -41,7 +41,7 @@ export default function WorldCupBusinessCoachArtifact() {
       </section>
 
       <section className="thinkingSection">
-        <p className="sectionLabel light">Design-thinking process</p><h2>A connected path from<br/>learner need to prototype.</h2>
+        <p className="sectionLabel light">Design-thinking process</p><h2>From Initial Idea to<br/>Tested AI Prototype.</h2>
         <div className="thinkingTimeline">{stages.map(([title, detail], index) => <article className="thinkingStep" key={title}><div className="thinkingMarker"><span>{index + 1}</span></div><div><p>Stage {String(index + 1).padStart(2, "0")}</p><h3>{title}</h3><span>{detail}</span></div></article>)}</div>
       </section>
 
