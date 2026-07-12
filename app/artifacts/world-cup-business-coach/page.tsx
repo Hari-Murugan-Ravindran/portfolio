@@ -24,7 +24,7 @@ const details = [
 export default function WorldCupBusinessCoachArtifact() {
   return (
     <main>
-      <nav className="nav artifactNav" aria-label="Artifact navigation"><a className="brand" href="/" aria-label="Portfolio home"><span>HR</span> Learning Portfolio</a><div className="navlinks"><a href="/">← All artifacts</a><a href="#process">Process</a><a href="#details">Artifact details</a></div></nav>
+      <nav className="nav artifactNav" aria-label="Artifact navigation"><a className="brand" href="/" aria-label="Portfolio home"><span>HR</span> Hari Murugan Ravindran</a><div className="navlinks"><a href="/">← All artifacts</a><a href="#process">Process</a><a href="#details">Artifact details</a></div></nav>
       <section className="artifactIntro artifactPageHero coachHero" id="top">
         <a className="backLink" href="/">← Back to portfolio</a><p className="sectionLabel light">Artifact 02 · AI prototyping & design thinking</p>
         <div className="artifactHeading"><div><h1>World Cup<br/>Business Coach.</h1><p className="subtitle">An AI learning assistant that makes business concepts easier to understand</p></div><p className="audience"><b>Designed for</b><br/>Young learners ages 10–15 who are interested in the World Cup and want an accessible introduction to sponsorships, media rights, ticketing, tourism, and merchandise.</p></div>
@@ -55,7 +55,7 @@ export default function WorldCupBusinessCoachArtifact() {
         <p className="intro"><b>Title:</b> AI Lab Report — World Cup Business Coach<br/><br/><b>Introduction & description:</b> This report documents my exploration of generative AI tools and the creation of a Custom GPT that teaches World Cup business concepts through simple language and familiar examples. The project demonstrates how audience research, prompt experimentation, and design thinking can turn a broad technology into a purposeful learning experience.</p>
         <div className="detailGrid">{details.map(([label, text], index) => <div className="detail" key={label}><span>{String(index + 1).padStart(2, "0")}</span><h3>{label}</h3><p>{text}</p></div>)}</div>
       </section>
-      <footer><div className="brand"><span>HR</span> Learning Portfolio</div><p>Artifact 02 · World Cup Business Coach</p><a href="/">Return to portfolio →</a></footer>
+      <footer><div className="brand"><span>HR</span> Hari Murugan Ravindran</div><p>Artifact 02 · World Cup Business Coach</p><a href="/">Return to portfolio →</a></footer>
     </main>
   );
 }

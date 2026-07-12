@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label="Portfolio home"><span>HR</span> Learning Portfolio</a>
+        <a className="brand" href="#top" aria-label="Portfolio home"><span>HR</span> Hari Murugan Ravindran</a>
         <div className="navlinks"><a href="#about">About</a><a href="#artifacts">Artifacts</a></div>
       </nav>
 
@@ -25,17 +25,14 @@ export default function Home() {
       </section>
 
       <section className="artifactsSection" id="artifacts">
-        <div className="artifactsHeader">
-          <div><p className="sectionLabel">Selected work</p><h2>Portfolio artifacts.</h2></div>
-          <p>Each artifact is presented as a complete professional resource, with its purpose, process, tools, and audience value documented.</p>
-        </div>
+        <div className="artifactsHeader"><h2>Portfolio artifacts.</h2></div>
 
         <div className="artifactsGrid">
           {artifacts.map((artifact) => <ArtifactCard artifact={artifact} key={artifact.href} />)}
         </div>
       </section>
 
-      <footer><div className="brand"><span>HR</span> Learning Portfolio</div><a href="#top">Back to top ↑</a></footer>
+      <footer><div className="brand"><span>HR</span> Hari Murugan Ravindran</div><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }

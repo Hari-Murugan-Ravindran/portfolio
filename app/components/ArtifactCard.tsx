@@ -24,10 +24,7 @@ export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
         )}
         {artifact.visual === "report" && (
           <div className="cardReport">
-            <span>AI LAB REPORT</span>
-            <strong>World Cup<br/>Business Coach</strong>
-            <div><i>AI</i><i>UX</i><i>GPT</i></div>
-            <small>Design thinking · 13 pages</small>
+            <img src="/artifacts/world-cup-business-coach-preview.png" alt="" />
           </div>
         )}
       </div>
