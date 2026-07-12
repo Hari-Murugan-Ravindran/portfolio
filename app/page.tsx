@@ -10,10 +10,9 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <p className="heroKicker">AI & machine learning · Research · Prototyping</p>
         <h1>Exploring how AI <em>evolves, teaches, and creates value.</em></h1>
         <div className="heroLower">
-          <div><p className="lede">I’m Hari Murugan Ravindran. I research the ideas behind artificial intelligence and turn what I learn into visual resources and audience-focused AI experiences.</p><a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a></div>
+          <div><p className="lede">I’m Hari Murugan Ravindran. With a background in software development and DevOps, I’m expanding my knowledge of AI and machine learning through practical, audience-focused projects.</p><a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a></div>
         </div>
       </section>
 
