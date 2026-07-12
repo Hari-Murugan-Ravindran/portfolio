@@ -46,7 +46,7 @@ export default function Home() {
         </article>
       </section>
 
-      <footer><div className="brand"><span>HR</span> Learning Portfolio</div><p>Course-based work · Curiosity · Clarity · Responsible innovation</p><a href="#top">Back to top ↑</a></footer>
+      <footer><div className="brand"><span>HR</span> Learning Portfolio</div><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
