@@ -10,16 +10,19 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <h1>I make complex AI ideas <em>clear, useful, and human.</em></h1>
-        <p className="lede">A growing collection of projects that demonstrates my ability to learn emerging technologies, connect ideas, and communicate their value to professional audiences.</p>
-        <a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a>
+        <p className="heroKicker">AI & machine learning · Research · Prototyping</p>
+        <h1>Exploring how AI <em>evolves, teaches, and creates value.</em></h1>
+        <div className="heroLower">
+          <div><p className="lede">I’m Hari Murugan Ravindran. I research the ideas behind artificial intelligence and turn what I learn into visual resources and audience-focused AI experiences.</p><a className="button" href="#artifacts">Explore my work <span aria-hidden="true">↓</span></a></div>
+          <div className="heroProjects" aria-label="Featured portfolio themes"><div><span>01</span><p><b>AI evolution</b>Research & visual communication</p></div><div><span>02</span><p><b>World Cup Business Coach</b>AI prototyping & design thinking</p></div></div>
+        </div>
       </section>
 
       <section className="about" id="about">
-        <div><p className="sectionLabel">Professional bio</p><h2>Learning in public,<br/>leading with clarity.</h2></div>
+        <div><p className="sectionLabel">Professional bio</p><h2>Researching AI.<br/>Designing for people.</h2></div>
         <div className="aboutCopy">
-          <p>I am an AI and machine learning learner developing the technical judgment and communication skills needed to turn emerging technologies into practical value. My work is grounded in curiosity, careful research, and a commitment to responsible application.</p>
-          <p>This portfolio presents complete, audience-ready projects. Each entry explains the goal, process, tools, and value behind the work.</p>
+          <p>I’m Hari Murugan Ravindran, an AI and machine learning learner focused on understanding not only what AI can do, but how to explain it clearly and shape it around real audience needs.</p>
+          <p>My AI evolution timeline turns more than seven decades of technical change into an accessible visual story. My World Cup Business Coach applies prompt experimentation and design thinking to help learners ages 10–15 understand sponsorships, broadcasting, ticketing, tourism, and merchandise. Together, these projects reflect how I work: research carefully, compare tools, simplify complexity, and build with a specific user in mind.</p>
           <div className="value"><span>Personal value proposition</span><p>I translate complex AI/ML concepts into clear, actionable resources that help people learn, make informed decisions, and approach change with confidence.</p></div>
         </div>
       </section>
