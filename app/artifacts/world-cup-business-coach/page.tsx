@@ -36,7 +36,7 @@ export default function WorldCupBusinessCoachArtifact() {
       </section>
 
       <section className="projectOverview" id="process">
-        <div className="overviewHeading"><div><p className="sectionLabel">AI Lab exploration</p><h2>From tool comparison<br/>to a focused solution.</h2></div><p>The lab was more than a finished chatbot. It was an opportunity to compare how generative AI tools respond, research, tutor, and adapt—and then use those observations to build for a specific audience.</p></div>
+        <div className="overviewHeading"><div><p className="sectionLabel">AI Lab exploration</p><h2>From tool comparison<br/>to a focused solution.</h2></div><p>The lab was more than a finished chatbot. It was an opportunity to compare how generative AI tools respond, research, tutor, and adapt. I then used those observations to build for a specific audience.</p></div>
         <div className="toolGrid">{tools.map((tool, index) => <article className="toolCard" key={tool.name}><span>{String(index + 1).padStart(2, "0")}</span><p>{tool.purpose}</p><h3>{tool.name}</h3><div className="toolRule"></div><p>{tool.detail}</p></article>)}</div>
       </section>
 
