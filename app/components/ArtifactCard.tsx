@@ -12,15 +12,16 @@ export type ArtifactCardData = {
 };
 
 export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return (
     <article className="artifactCard">
       <div className="artifactCardVisual" aria-hidden="true">
         <span className="cardNumber">{artifact.number}</span>
         {artifact.visual === "timeline" && (
-          <div className="submittedThumb timelineDocument"><img src="/artifacts/timeline-page-1.png" alt="" /></div>
+          <div className="submittedThumb timelineDocument"><img src={`${basePath}/artifacts/timeline-page-1.png`} alt="" /></div>
         )}
         {artifact.visual === "report" && (
-          <div className="submittedThumb reportDocument"><img src="/artifacts/world-cup-business-coach-preview.png" alt="" /></div>
+          <div className="submittedThumb reportDocument"><img src={`${basePath}/artifacts/world-cup-business-coach-preview.png`} alt="" /></div>
         )}
       </div>
       <div className="artifactCardContent">

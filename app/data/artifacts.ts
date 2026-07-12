@@ -1,5 +1,7 @@
 import type { ArtifactCardData } from "../components/ArtifactCard";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const artifacts: ArtifactCardData[] = [
   {
     number: "01",
@@ -9,7 +11,7 @@ export const artifacts: ArtifactCardData[] = [
     description: "A visual timeline tracing major developments in artificial intelligence from 1950 through 2024, including neural networks, expert systems, deep learning, generative AI, and modern AI agents.",
     format: "Timeline",
     focus: "AI/ML evolution",
-    href: "/artifacts/ai-ml-timeline",
+    href: `${basePath}/artifacts/ai-ml-timeline/`,
     buttonLabel: "View Artifact 1",
     visual: "timeline",
   },
@@ -21,7 +23,7 @@ export const artifacts: ArtifactCardData[] = [
     description: "An AI Lab project documenting the research, prompt experimentation, and design-thinking process used to create a Custom GPT that explains World Cup business concepts to learners ages 10–15.",
     format: "AI Lab Report",
     focus: "AI-assisted learning",
-    href: "/artifacts/world-cup-business-coach",
+    href: `${basePath}/artifacts/world-cup-business-coach/`,
     buttonLabel: "View Artifact 2",
     visual: "report",
   },
