@@ -19,7 +19,7 @@ export default function Home() {
       <section className="about" id="about">
         <div><p className="sectionLabel">Professional bio</p><h2>Building software.<br/>Learning what’s next.</h2></div>
         <div className="aboutCopy">
-          <p>I’m Hari Murugan Ravindran, a software development and DevOps professional with four years of experience. As an AI and machine learning learner, I’m focused on understanding not only what AI can do, but also how to explain it clearly and shape it around real audience needs.</p>
+          <p>I’m Hari Murugan Ravindran, a software development and DevOps professional with four years of experience. I’m expanding my skills in AI and machine learning and exploring how these technologies can support practical software solutions.</p>
           <div className="value"><span>Personal value proposition</span><p>I translate complex AI/ML concepts into clear, actionable resources that help people learn, make informed decisions, and approach change with confidence.</p></div>
         </div>
       </section>
