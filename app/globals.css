@@ -74,13 +74,9 @@ footer a { font-weight:700; }
 .artifactThumbnail img { width:88%; max-height:82%; object-fit:contain; background:white; box-shadow:0 22px 70px rgba(0,0,0,.35); transform:rotate(-1.5deg); }
 .artifactThumbnail .cardNumber { position:absolute; top:34px; left:34px; z-index:2; background:var(--ink); padding:8px 11px; }
 .cardNumber { position:relative; z-index:3; font-family:Georgia,serif; color:var(--mint); font-size:24px; }
-.simpleThumb { position:absolute; inset:78px 11% 62px; padding:44px 38px 34px; display:flex; flex-direction:column; background:var(--paper); color:var(--ink); border:1px solid var(--line); }
-.simpleThumb p { margin:0 0 18px; color:#557c69; text-transform:uppercase; letter-spacing:.15em; font-size:9px; font-weight:700; }
-.simpleThumb strong { font-family:Georgia,serif; font-size:clamp(38px,4vw,62px); line-height:.9; letter-spacing:-.045em; font-weight:400; }
-.simpleRule { height:1px; margin-top:auto; margin-bottom:22px; background:var(--line); display:flex; justify-content:space-around; }
-.simpleRule i { display:block; width:8px; height:8px; margin-top:-4px; background:#557c69; border-radius:50%; }
-.simpleThumb>span { color:#53645c; text-transform:uppercase; letter-spacing:.11em; font-size:8px; font-weight:700; }
-.reportThumb { background:var(--cream); }.reportThumb .simpleRule i { border-radius:0; background:var(--ink); }
+.submittedThumb { position:absolute; inset:66px 9% 50px; display:grid; place-items:center; }
+.submittedThumb img { display:block; max-width:100%; max-height:100%; object-fit:contain; background:white; border:1px solid #d8d8d8; box-shadow:0 16px 36px rgba(0,0,0,.22); }
+.timelineDocument img { width:100%; }.reportDocument img { height:100%; }
 .artifactCardContent { padding:60px; display:flex; align-items:flex-start; flex-direction:column; }
 .cardKicker { color:#557c69; text-transform:uppercase; letter-spacing:.12em; font-size:10px; font-weight:700; }
 .artifactCardContent h3 { font-family:Georgia,serif; font-size:clamp(45px,5vw,68px); font-weight:400; letter-spacing:-.045em; line-height:.95; margin:24px 0 18px; }
@@ -123,6 +119,6 @@ footer a { font-weight:700; }
   .artifactIntro,.timeline,.artifactDetails,.references { padding-left:6vw; padding-right:6vw; }
   .milestone { grid-template-columns:80px 30px 1fr; } .year { font-size:24px; }
   .milestoneBody { grid-template-columns:1fr; gap:16px; } .milestoneBody>* { grid-column:1!important; }
-  .impact { grid-template-columns:1fr; } .detailGrid,.toolGrid { grid-template-columns:1fr; } .artifactsSection,.submittedArtifact,.projectOverview,.thinkingSection,.coachFeatures { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .simpleThumb { inset:54px 9% 38px; padding:32px 26px 25px; }.simpleThumb strong { font-size:40px; } .cardMeta { flex-direction:column; gap:14px; } .pdfPages figure { padding:8px; } .thinkingStep { grid-template-columns:55px 1fr; }.thinkingStep>div:last-child { grid-template-columns:1fr; gap:12px; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
+  .impact { grid-template-columns:1fr; } .detailGrid,.toolGrid { grid-template-columns:1fr; } .artifactsSection,.submittedArtifact,.projectOverview,.thinkingSection,.coachFeatures { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .submittedThumb { inset:52px 8% 35px; } .cardMeta { flex-direction:column; gap:14px; } .pdfPages figure { padding:8px; } .thinkingStep { grid-template-columns:55px 1fr; }.thinkingStep>div:last-child { grid-template-columns:1fr; gap:12px; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }

@@ -17,18 +17,10 @@ export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
       <div className="artifactCardVisual" aria-hidden="true">
         <span className="cardNumber">{artifact.number}</span>
         {artifact.visual === "timeline" && (
-          <div className="simpleThumb timelineThumb">
-            <p>Timeline of</p><strong>AI Evolution</strong>
-            <div className="simpleRule"><i></i><i></i><i></i></div>
-            <span>1950 - 2024</span>
-          </div>
+          <div className="submittedThumb timelineDocument"><img src="/artifacts/timeline-page-1.png" alt="" /></div>
         )}
         {artifact.visual === "report" && (
-          <div className="simpleThumb reportThumb">
-            <p>AI Lab Report</p><strong>World Cup<br/>Business Coach</strong>
-            <div className="simpleRule"><i></i><i></i><i></i></div>
-            <span>ChatGPT · STORM AI · Design Thinking</span>
-          </div>
+          <div className="submittedThumb reportDocument"><img src="/artifacts/world-cup-business-coach-preview.png" alt="" /></div>
         )}
       </div>
       <div className="artifactCardContent">
