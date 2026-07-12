@@ -30,17 +30,16 @@ export default function Home() {
         </div>
 
         <article className="artifactCard">
-          <div className="artifactCardVisual" aria-hidden="true">
+          <div className="artifactCardVisual artifactThumbnail">
             <span className="cardNumber">01</span>
-            <div className="cardOrb"></div>
-            <div className="cardTimeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <img src="/artifacts/timeline-page-1.png" alt="Preview of the submitted Timeline of AI Evolution" />
           </div>
           <div className="artifactCardContent">
             <p className="cardKicker">Artifact 01 · Research & communication</p>
-            <h3>From Imitation<br/>to Generation</h3>
-            <p className="cardSubtitle">A brief history of artificial intelligence and machine learning</p>
-            <p>A visual timeline connecting eight pivotal technical advances to their practical and cultural impact, designed for hiring managers, colleagues, and nontechnical leaders.</p>
-            <div className="cardMeta"><span><b>Format</b> Interactive-style timeline</span><span><b>Focus</b> AI/ML foundations</span></div>
+            <h3>Timeline of<br/>AI Evolution</h3>
+            <p className="cardSubtitle">From the Turing Test to AI agents and regulation</p>
+            <p>A four-page visual timeline tracing major developments in artificial intelligence from 1950 through 2024, including neural networks, expert systems, deep learning, generative AI, and modern AI agents.</p>
+            <div className="cardMeta"><span><b>Format</b> Four-page PDF timeline</span><span><b>Focus</b> AI/ML evolution</span></div>
             <a className="button cardButton" href="/artifacts/ai-ml-timeline">View Artifact 1 <span aria-hidden="true">→</span></a>
           </div>
         </article>
