@@ -47,7 +47,7 @@ export default function TimelineArtifact() {
       <nav className="nav artifactNav" aria-label="Artifact navigation"><a className="brand" href={`${basePath}/`} aria-label="Portfolio home"><span>HR</span> Hari Murugan Ravindran</a><div className="navlinks"><a href={`${basePath}/`}>← All artifacts</a><a href="#timeline">Timeline</a><a href="#details">Artifact details</a></div></nav>
       <section className="artifactIntro artifactPageHero" id="top">
         <a className="backLink" href={`${basePath}/`}>← Back to portfolio</a><p className="sectionLabel light">Artifact 01 · Research & visual communication</p>
-        <div className="artifactHeading"><div><h1>Timeline of<br/>AI evolution.</h1><p className="subtitle">A visual journey through more than seven decades of artificial intelligence</p></div><p className="audience"><b>Designed for</b><br/>Students, colleagues, hiring managers, and nontechnical professionals who want a concise orientation to the development of AI.</p></div>
+        <div className="artifactHeading"><div><h1>Timeline of<br/>AI evolution.</h1><p className="subtitle">A visual journey through more than seven decades of artificial intelligence</p></div><p className="audience"><b>Designed for</b><br/>Students and professionals seeking a clear overview of AI’s development.</p></div>
         <div className="pdfCallout"><div><span>Timeline PDF</span><p>Explore the complete visual timeline.</p></div><a className="button pdfButton" href={`${basePath}/artifacts/timeline-of-ai-evolution.pdf`} target="_blank" rel="noreferrer">Open PDF <span aria-hidden="true">↗</span></a></div>
       </section>
 
