@@ -8,7 +8,8 @@ export type ArtifactCardData = {
   focus: string;
   href: string;
   buttonLabel: string;
-  visual?: "timeline" | "report";
+  thumbnail: string;
+  thumbnailClass?: string;
 };
 
 export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
@@ -17,12 +18,9 @@ export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
     <article className="artifactCard">
       <div className="artifactCardVisual" aria-hidden="true">
         <span className="cardNumber">{artifact.number}</span>
-        {artifact.visual === "timeline" && (
-          <div className="submittedThumb timelineDocument"><img src={`${basePath}/artifacts/timeline-page-1.png`} alt="" /></div>
-        )}
-        {artifact.visual === "report" && (
-          <div className="submittedThumb reportDocument"><img src={`${basePath}/artifacts/world-cup-business-coach-preview.png`} alt="" /></div>
-        )}
+        <div className={`submittedThumb ${artifact.thumbnailClass ?? ""}`}>
+          <img src={`${basePath}${artifact.thumbnail}`} alt="" />
+        </div>
       </div>
       <div className="artifactCardContent">
         <p className="cardKicker">Artifact {artifact.number} · {artifact.category}</p>
