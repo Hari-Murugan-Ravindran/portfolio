@@ -8,8 +8,9 @@ export type ArtifactCardData = {
   focus: string;
   href: string;
   buttonLabel: string;
-  thumbnail: string;
+  thumbnail?: string;
   thumbnailClass?: string;
+  visualTitle?: string;
 };
 
 export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
@@ -18,9 +19,17 @@ export function ArtifactCard({ artifact }: { artifact: ArtifactCardData }) {
     <article className="artifactCard">
       <div className="artifactCardVisual" aria-hidden="true">
         <span className="cardNumber">{artifact.number}</span>
-        <div className={`submittedThumb ${artifact.thumbnailClass ?? ""}`}>
-          <img src={`${basePath}${artifact.thumbnail}`} alt="" />
-        </div>
+        {artifact.thumbnail ? (
+          <div className={`submittedThumb ${artifact.thumbnailClass ?? ""}`}>
+            <img src={`${basePath}${artifact.thumbnail}`} alt="" />
+          </div>
+        ) : (
+          <div className="trainingMethodsThumb">
+            <p>{artifact.visualTitle}</p>
+            <div><span>Supervised</span><span>Unsupervised</span><span>Reinforcement</span></div>
+            <small>Data → Learning → Feedback → Improvement</small>
+          </div>
+        )}
       </div>
       <div className="artifactCardContent">
         <p className="cardKicker">Artifact {artifact.number} · {artifact.category}</p>

@@ -23,7 +23,7 @@ async function render(path = "/") {
   );
 }
 
-test("renders all three portfolio artifact cards", async () => {
+test("renders all four portfolio artifact cards", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -32,8 +32,24 @@ test("renders all three portfolio artifact cards", async () => {
   assert.match(html, /Timeline of AI Evolution/);
   assert.match(html, /World Cup Business Coach/);
   assert.match(html, /Machine Learning and Deep Learning/);
+  assert.match(html, /Machine Learning Training Methods/);
   assert.match(html, /href="\/artifacts\/machine-learning-vs-deep-learning\/"/);
   assert.match(html, /machine-learning-deep-learning-preview\.png/);
+  assert.match(html, /href="\/artifacts\/machine-learning-training-methods\/"/);
+});
+
+test("renders the machine learning training methods artifact page", async () => {
+  const response = await render("/artifacts/machine-learning-training-methods/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Supervised learning/);
+  assert.match(html, /Unsupervised learning/);
+  assert.match(html, /Reinforcement learning/);
+  assert.match(html, /Prepare the data/);
+  assert.match(html, /Monitor and retrain/);
+  assert.match(html, /Value Proposition/);
+  assert.doesNotMatch(html, /Screenshot 2026|student\.schoolai\.com|chat transcript/i);
 });
 
 test("renders the machine learning and deep learning artifact page", async () => {

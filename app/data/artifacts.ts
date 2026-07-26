@@ -42,4 +42,16 @@ export const artifacts: ArtifactCardData[] = [
     thumbnail: "/artifacts/machine-learning-deep-learning-preview.png",
     thumbnailClass: "analysisDocument",
   },
+  {
+    number: "04",
+    category: "Machine learning foundations",
+    title: "Machine Learning Training Methods",
+    subtitle: "How models learn from data, feedback, and repetition",
+    description: "A practical learning guide comparing supervised, unsupervised, and reinforcement learning while explaining the full training cycle from data preparation to evaluation and retraining.",
+    format: "Web Learning Guide",
+    focus: "Model training",
+    href: `${basePath}/artifacts/machine-learning-training-methods/`,
+    buttonLabel: "View Artifact 4",
+    visualTitle: "How Models Learn",
+  },
 ];

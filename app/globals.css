@@ -78,6 +78,11 @@ footer a { font-weight:700; }
 .submittedThumb img { display:block; max-width:100%; max-height:100%; object-fit:contain; background:white; border:1px solid #d8d8d8; box-shadow:0 16px 36px rgba(0,0,0,.22); }
 .timelineDocument img { width:100%; }.reportDocument img { height:100%; }
 .analysisDocument img { width:100%; }
+.trainingMethodsThumb { position:absolute; inset:74px 8% 48px; background:var(--paper); border:1px solid #d8d8d8; box-shadow:0 16px 36px rgba(0,0,0,.22); padding:38px; display:flex; flex-direction:column; justify-content:space-between; }
+.trainingMethodsThumb>p { font-family:Georgia,serif; font-size:clamp(32px,4vw,54px); line-height:.95; letter-spacing:-.04em; margin:0; max-width:300px; }
+.trainingMethodsThumb>div { display:grid; gap:10px; }
+.trainingMethodsThumb>div span { border-top:1px solid var(--line); padding:11px 0; color:#557c69; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; }
+.trainingMethodsThumb small { color:#65756e; font-size:10px; letter-spacing:.04em; }
 .artifactCardContent { padding:60px; display:flex; align-items:flex-start; flex-direction:column; }
 .cardKicker { color:#557c69; text-transform:uppercase; letter-spacing:.12em; font-size:10px; font-weight:700; }
 .artifactCardContent h3 { font-family:Georgia,serif; font-size:clamp(45px,5vw,68px); font-weight:400; letter-spacing:-.045em; line-height:.95; margin:24px 0 18px; }
@@ -131,12 +136,39 @@ footer a { font-weight:700; }
 .decisionList span { color:var(--lime); font-family:Georgia,serif; }
 .decisionList h3 { font-family:Georgia,serif; font-size:24px; font-weight:400; margin:0; }
 .decisionList p { color:#cbd3cf; font-size:14px; line-height:1.65; margin:0; }
+.methodsSection { padding:120px 8vw; background:var(--cream); }
+.methodsGrid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:70px; }
+.methodCard { background:var(--paper); border:1px solid var(--line); padding:30px; min-height:510px; display:flex; flex-direction:column; }
+.methodNumber { color:#6c7e75; font-family:Georgia,serif; font-size:22px; }
+.methodSignal { color:#557c69; text-transform:uppercase; letter-spacing:.1em; font-size:9px; font-weight:700; margin:52px 0 12px; }
+.methodCard h3 { font-family:Georgia,serif; font-size:34px; line-height:1.05; font-weight:400; margin:0 0 24px; }
+.methodCard>p:not(.methodSignal) { color:#53645c; font-size:14px; line-height:1.7; }
+.methodExample { border-top:1px solid var(--line); margin-top:auto; padding-top:20px; display:grid; gap:10px; }
+.methodExample b { color:#557c69; text-transform:uppercase; letter-spacing:.1em; font-size:9px; }
+.methodExample span { color:#53645c; font-size:13px; line-height:1.6; }
+.trainingCycle { padding:115px 8vw; background:var(--ink); color:var(--paper); display:grid; grid-template-columns:.8fr 1.2fr; gap:9vw; }
+.trainingCycle h2,.learningTakeaway h2 { font-family:Georgia,serif; font-weight:400; letter-spacing:-.04em; font-size:clamp(46px,5.5vw,76px); line-height:1; margin:28px 0; }
+.cycleIntro { color:#cbd3cf; font-size:15px; line-height:1.7; max-width:470px; }
+.cycleSteps { border-top:1px solid #4a5952; }
+.cycleSteps article { display:grid; grid-template-columns:52px 1fr; gap:20px; border-bottom:1px solid #4a5952; padding:24px 0; }
+.cycleSteps article>span { color:var(--lime); font-family:Georgia,serif; }
+.cycleSteps h3 { font-family:Georgia,serif; font-size:24px; font-weight:400; margin:0 0 8px; }
+.cycleSteps p { color:#cbd3cf; font-size:14px; line-height:1.6; margin:0; }
+.foundationsSection { padding:120px 8vw; background:var(--paper); }
+.foundationGrid { display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); margin-top:70px; }
+.foundationGrid article { min-height:260px; padding:30px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+.foundationGrid article>span { color:#6c7e75; font-family:Georgia,serif; }
+.foundationGrid h3 { font-family:Georgia,serif; font-size:28px; font-weight:400; margin:42px 0 14px; }
+.foundationGrid p { color:#53645c; font-size:14px; line-height:1.7; margin:0; }
+.learningTakeaway { padding:115px 8vw; background:#557c69; color:var(--paper); }
+.learningTakeaway h2 { max-width:1000px; }
+.learningTakeaway>p:last-child { max-width:720px; margin:35px 0 0 auto; color:#e1e8e4; font-size:17px; line-height:1.75; border-top:1px solid rgba(255,255,255,.3); padding-top:22px; }
 @media (max-width:760px) {
   .navlinks { display:none; } .hero { padding-top:9vh; }
-  .about,.artifactHeading,.references,.artifactsHeader,.artifactCard,.submissionHeader,.overviewHeading,.coachFeatures,.comparisonGrid,.decisionSection { grid-template-columns:1fr; } .about { padding:80px 6vw; } .pdfCallout,.projectActions { align-items:flex-start; flex-direction:column; }
+  .about,.artifactHeading,.references,.artifactsHeader,.artifactCard,.submissionHeader,.overviewHeading,.coachFeatures,.comparisonGrid,.decisionSection,.methodsGrid,.trainingCycle,.foundationGrid { grid-template-columns:1fr; } .about { padding:80px 6vw; } .pdfCallout,.projectActions { align-items:flex-start; flex-direction:column; }
   .artifactIntro,.timeline,.artifactDetails,.references { padding-left:6vw; padding-right:6vw; }
   .milestone { grid-template-columns:80px 30px 1fr; } .year { font-size:24px; }
   .milestoneBody { grid-template-columns:1fr; gap:16px; } .milestoneBody>* { grid-column:1!important; }
-  .impact { grid-template-columns:1fr; } .detailGrid,.toolGrid { grid-template-columns:1fr; } .artifactsSection,.submittedArtifact,.projectOverview,.thinkingSection,.coachFeatures,.comparisonOverview,.decisionSection { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .submittedThumb { inset:52px 8% 35px; } .cardMeta { flex-direction:column; gap:14px; } .pdfPages figure { padding:8px; } .thinkingStep { grid-template-columns:55px 1fr; }.thinkingStep>div:last-child { grid-template-columns:1fr; gap:12px; } .comparisonText { grid-template-columns:1fr; } .decisionList article { grid-template-columns:34px 1fr; } .decisionList article p { grid-column:2; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
+  .impact { grid-template-columns:1fr; } .detailGrid,.toolGrid { grid-template-columns:1fr; } .artifactsSection,.submittedArtifact,.projectOverview,.thinkingSection,.coachFeatures,.comparisonOverview,.decisionSection,.methodsSection,.trainingCycle,.foundationsSection,.learningTakeaway { padding:80px 6vw; } .artifactCardContent { padding:38px 28px; } .artifactCardVisual { min-height:360px; } .submittedThumb { inset:52px 8% 35px; } .trainingMethodsThumb { inset:52px 8% 35px; padding:26px; } .cardMeta { flex-direction:column; gap:14px; } .pdfPages figure { padding:8px; } .thinkingStep { grid-template-columns:55px 1fr; }.thinkingStep>div:last-child { grid-template-columns:1fr; gap:12px; } .comparisonText { grid-template-columns:1fr; } .decisionList article { grid-template-columns:34px 1fr; } .decisionList article p { grid-column:2; } footer { align-items:flex-start; gap:25px; flex-direction:column; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
