@@ -32,10 +32,11 @@ test("renders all four portfolio artifact cards", async () => {
   assert.match(html, /Timeline of AI Evolution/);
   assert.match(html, /World Cup Business Coach/);
   assert.match(html, /Machine Learning and Deep Learning/);
-  assert.match(html, /Machine Learning Training Methods/);
+  assert.match(html, /Machine Learning Training Methods Coach/);
   assert.match(html, /href="\/artifacts\/machine-learning-vs-deep-learning\/"/);
   assert.match(html, /machine-learning-deep-learning-preview\.png/);
   assert.match(html, /href="\/artifacts\/machine-learning-training-methods\/"/);
+  assert.match(html, /machine-learning-training-coach\.png/);
 });
 
 test("renders the machine learning training methods artifact page", async () => {
@@ -46,10 +47,12 @@ test("renders the machine learning training methods artifact page", async () => 
   assert.match(html, /Supervised learning/);
   assert.match(html, /Unsupervised learning/);
   assert.match(html, /Reinforcement learning/);
-  assert.match(html, /Prepare the data/);
-  assert.match(html, /Monitor and retrain/);
+  assert.match(html, /From required questions/);
+  assert.match(html, /independent exploration/);
   assert.match(html, /Value Proposition/);
-  assert.doesNotMatch(html, /Screenshot 2026|student\.schoolai\.com|chat transcript/i);
+  assert.match(html, /A chatbot became/);
+  assert.match(html, /SchoolAI Machine Learning Training Methods activity/);
+  assert.doesNotMatch(html, /6LND|CP5X|Join Space|Hari Murugan Ravindran.*Join/i);
 });
 
 test("renders the machine learning and deep learning artifact page", async () => {
