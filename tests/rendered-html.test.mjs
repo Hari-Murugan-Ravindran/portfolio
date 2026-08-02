@@ -23,7 +23,7 @@ async function render(path = "/") {
   );
 }
 
-test("renders all four portfolio artifact cards", async () => {
+test("renders all five portfolio artifact cards", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -33,10 +33,27 @@ test("renders all four portfolio artifact cards", async () => {
   assert.match(html, /World Cup Business Coach/);
   assert.match(html, /Machine Learning and Deep Learning/);
   assert.match(html, /Machine Learning Training Methods Coach/);
+  assert.match(html, /Data Challenge Scenario Coach/);
   assert.match(html, /href="\/artifacts\/machine-learning-vs-deep-learning\/"/);
   assert.match(html, /machine-learning-deep-learning-preview\.png/);
   assert.match(html, /href="\/artifacts\/machine-learning-training-methods\/"/);
   assert.match(html, /machine-learning-training-coach\.png/);
+  assert.match(html, /href="\/artifacts\/data-challenge-scenario-coach\/"/);
+  assert.match(html, /data-challenge-scenario-coach\.png/);
+});
+
+test("renders the data challenge scenario coach artifact page", async () => {
+  const response = await render("/artifacts/data-challenge-scenario-coach/");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Missing data/);
+  assert.match(html, /Imbalanced data/);
+  assert.match(html, /Data &amp; concept drift/);
+  assert.match(html, /From a data problem/);
+  assert.match(html, /Value Proposition/);
+  assert.match(html, /SchoolAI AIML-500 Data Challenge Scenario Coach entry screen/);
+  assert.doesNotMatch(html, /Space Code|Student ID|Join Space/i);
 });
 
 test("renders the machine learning training methods artifact page", async () => {

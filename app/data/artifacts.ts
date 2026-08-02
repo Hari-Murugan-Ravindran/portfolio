@@ -55,4 +55,17 @@ export const artifacts: ArtifactCardData[] = [
     thumbnail: "/artifacts/machine-learning-training-coach.png",
     thumbnailClass: "coachStudyDocument",
   },
+  {
+    number: "05",
+    category: "Data problem-solving & responsible AI",
+    title: "Data Challenge Scenario Coach",
+    subtitle: "Working through real-world data problems with an AI coach",
+    description: "An interactive scenario-based activity using a pre-trained AI coach to reason through missing data, class imbalance, and model drift while considering reliability, privacy, and practical trade-offs.",
+    format: "Interactive Scenario Reflection",
+    focus: "Data quality & model reliability",
+    href: `${basePath}/artifacts/data-challenge-scenario-coach/`,
+    buttonLabel: "View Artifact 5",
+    thumbnail: "/artifacts/data-challenge-scenario-coach.png",
+    thumbnailClass: "coachStudyDocument",
+  },
 ];
