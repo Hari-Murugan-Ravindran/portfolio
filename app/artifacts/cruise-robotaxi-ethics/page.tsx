@@ -59,7 +59,7 @@ export default function CruiseRobotaxiEthicsArtifact() {
 
       <section className="artifactIntro artifactPageHero" id="top">
         <a className="backLink" href={`${basePath}/`}>← Back to portfolio</a>
-        <p className="sectionLabel light">Artifact 05 · AI ethics & critical analysis</p>
+        <p className="sectionLabel light">Artifact 06 · AI ethics & critical analysis</p>
         <div className="artifactHeading">
           <div><h1>Safety, Testing, and Accountability in Autonomous AI.</h1><p className="subtitle">Lessons from the 2023 Cruise robotaxi incident</p></div>
           <p className="audience"><b>Designed for</b><br/>Students and professionals interested in responsible AI, autonomous systems, software safety, and technology governance.</p>
@@ -115,7 +115,7 @@ export default function CruiseRobotaxiEthicsArtifact() {
         <div><p><b>AI disclosure</b></p><p>I used generative AI to improve grammar and clarity. The ideas, analysis, proposed solutions, and reflection are my own.</p><div className="projectActions"><a className="button pdfButton" href={`${basePath}/artifacts/cruise-robotaxi-ethics-analysis.pdf`} target="_blank" rel="noreferrer">View complete analysis <span aria-hidden="true">↗</span></a></div></div>
       </section>
 
-      <footer><div className="brand"><span>HR</span> Hari Murugan Ravindran</div><p>Artifact 05 · AI Ethics Critical Thinking Analysis</p><a href={`${basePath}/`}>Return to portfolio →</a></footer>
+      <footer><div className="brand"><span>HR</span> Hari Murugan Ravindran</div><p>Artifact 06 · AI Ethics Critical Thinking Analysis</p><a href={`${basePath}/`}>Return to portfolio →</a></footer>
     </main>
   );
 }
