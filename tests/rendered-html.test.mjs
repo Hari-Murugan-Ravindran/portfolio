@@ -33,27 +33,29 @@ test("renders all five portfolio artifact cards", async () => {
   assert.match(html, /World Cup Business Coach/);
   assert.match(html, /Machine Learning and Deep Learning/);
   assert.match(html, /Machine Learning Training Methods Coach/);
-  assert.match(html, /Data Challenge Scenario Coach/);
+  assert.match(html, /Cruise Robotaxi Ethics Analysis/);
   assert.match(html, /href="\/artifacts\/machine-learning-vs-deep-learning\/"/);
   assert.match(html, /machine-learning-deep-learning-preview\.png/);
   assert.match(html, /href="\/artifacts\/machine-learning-training-methods\/"/);
   assert.match(html, /machine-learning-training-coach\.png/);
-  assert.match(html, /href="\/artifacts\/data-challenge-scenario-coach\/"/);
-  assert.match(html, /data-challenge-scenario-coach\.png/);
+  assert.match(html, /href="\/artifacts\/cruise-robotaxi-ethics\/"/);
+  assert.match(html, /cruise-robotaxi-ethics-analysis-preview\.png/);
+  assert.doesNotMatch(html, /Data Challenge Scenario Coach/);
 });
 
-test("renders the data challenge scenario coach artifact page", async () => {
-  const response = await render("/artifacts/data-challenge-scenario-coach/");
+test("renders the Cruise robotaxi ethics artifact page", async () => {
+  const response = await render("/artifacts/cruise-robotaxi-ethics/");
   assert.equal(response.status, 200);
 
   const html = await response.text();
-  assert.match(html, /Missing data/);
-  assert.match(html, /Imbalanced data/);
-  assert.match(html, /Data &amp; concept drift/);
-  assert.match(html, /From a data problem/);
+  assert.match(html, /Safety &amp; failure handling/);
+  assert.match(html, /Testing &amp; deployment/);
+  assert.match(html, /Transparency &amp; accountability/);
+  assert.match(html, /whole-system responsibility/);
   assert.match(html, /Value Proposition/);
-  assert.match(html, /SchoolAI AIML-500 Data Challenge Scenario Coach entry screen/);
-  assert.doesNotMatch(html, /Space Code|Student ID|Join Space/i);
+  assert.match(html, /cruise-robotaxi-ethics-analysis\.pdf/);
+  assert.match(html, /cruise-robotaxi-ethics-analysis\.docx/);
+  assert.match(html, /generative AI to improve grammar and clarity/);
 });
 
 test("renders the machine learning training methods artifact page", async () => {
@@ -90,5 +92,8 @@ test("includes the original artifact files and thumbnail", async () => {
     access(new URL("../public/artifacts/machine-learning-deep-learning-examples.docx", import.meta.url)),
     access(new URL("../public/artifacts/machine-learning-deep-learning-examples.pdf", import.meta.url)),
     access(new URL("../public/artifacts/machine-learning-deep-learning-preview.png", import.meta.url)),
+    access(new URL("../public/artifacts/cruise-robotaxi-ethics-analysis.docx", import.meta.url)),
+    access(new URL("../public/artifacts/cruise-robotaxi-ethics-analysis.pdf", import.meta.url)),
+    access(new URL("../public/artifacts/cruise-robotaxi-ethics-analysis-preview.png", import.meta.url)),
   ]);
 });
